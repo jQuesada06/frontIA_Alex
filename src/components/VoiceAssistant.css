@@ -1,0 +1,102 @@
+/* VoiceAssistant.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+  }
+  
+  /* Clase para el robot "despierto" */
+  .robot {
+    background-image: url('../images/despierto.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+    margin-top: 70px;
+    margin-right: 15%;
+    margin-bottom: 10px;
+  }
+  
+  /* Clase para el robot "dormido" */
+  .robot-dormido {
+    background-image: url('../images/dormido.svg'); /* Cambia la imagen para el robot "dormido" */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+    margin-top: 70px;
+    margin-right: 15%;
+    margin-bottom: 10px;
+  }
+  
+  .speech-bubble {
+    background-image: url('../images/nube.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+    max-width: 400px;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 100px;
+    margin-right: 8%;
+    padding-right: 40px;
+  }
+  
+  .message-container {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    font-size: 20px;
+    color: aliceblue;
+    top: 100px;
+    left: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+  }
+  
+  .message-container.visible {
+    display: block;
+  }
+  
+  .microphone-button {
+    background-color: #2ea2ec;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px; /* Ancho deseado */
+    height: 60px; /* Alto deseado */
+    border-radius: 50%; /* Esto hará que el botón sea redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 5px 100px 16px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+  }
+  
+  /* Estilos para el ícono */
+  .microphone-button svg {
+    color: white; /* Color del ícono */
+    font-size: 24px; /* Tamaño del ícono */
+  }
+  
+
+  /* Estilos para el botón cuando estás hablando */
+.microphone-button.listening {
+  background-color: #ff0000; /* Cambiar el color del fondo cuando estás hablando */
+  /* Otros estilos específicos cuando estás hablando */
+}
